@@ -9,104 +9,112 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var sum: Double = 0
     var currentValue: Double = 0
     var inputValue: Double = 0
-    var operatorApplied: Bool = false
-    var currentAppliedOperator = ""
+    var sum: Double = 0
+    var operatorClicked: Bool = false
+    var currentClickedOperator: String = ""
     
-    @IBOutlet weak var sumTextField: UITextField!
+    @IBOutlet weak var calculatorInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        calculatorInput.text = "0"
+    }
+    
+    @IBAction func calculatorInputDidBegin(_ sender: Any) {
+        calculatorInput.text = ""
+    }
+    
+    @IBAction func calculatorInputChanged(_ sender: Any) {
+        
+        if operatorClicked == false {
+            currentValue = Double(calculatorInput.text!)!
+        }
+        
+        if operatorClicked == true {
+            inputValue = Double(calculatorInput.text!)!
+        }
     }
     
     @IBAction func plusOperatorButton(_ sender: Any) {
         
-        operatorApplied = true
+        operatorClicked = true
         
-        if operatorApplied == true {
-            sumTextField.text = ""
+        if operatorClicked == true {
+            calculatorInput.text = ""
         }
         
-        currentAppliedOperator = "+"
+        currentClickedOperator = "+"
     }
     
     
     @IBAction func minusOperatorButton(_ sender: Any) {
         
-        operatorApplied = true
+        operatorClicked = true
         
-        if operatorApplied == true {
-            sumTextField.text = ""
+        if operatorClicked == true {
+            calculatorInput.text = ""
         }
         
-        currentAppliedOperator = "-"
+        currentClickedOperator = "-"
     }
     
     
     @IBAction func multiplyOperatorButton(_ sender: Any) {
         
-        operatorApplied = true
+        operatorClicked = true
         
-        if operatorApplied == true {
-            sumTextField.text = ""
+        if operatorClicked == true {
+            calculatorInput.text = ""
         }
         
-        currentAppliedOperator = "*"
+        currentClickedOperator = "*"
     }
     
     
     @IBAction func divideOperatorButton(_ sender: Any) {
         
-        operatorApplied = true
+        operatorClicked = true
         
-        if operatorApplied == true {
-            sumTextField.text = ""
+        if operatorClicked == true {
+            calculatorInput.text = ""
         }
         
-        currentAppliedOperator = "/"
+        currentClickedOperator = "/"
     }
     
     @IBAction func calculateButton(_ sender: Any) {
         
-        if currentAppliedOperator == "+" {
+        if currentClickedOperator == "+" {
             sum = currentValue + inputValue
         }
         
-        if currentAppliedOperator == "-" {
+        if currentClickedOperator == "-" {
             sum = currentValue - inputValue
         }
         
-        if currentAppliedOperator == "*" {
+        if currentClickedOperator == "*" {
             sum = currentValue * inputValue
+            
         }
         
-        if currentAppliedOperator == "/" {
+        if currentClickedOperator == "/" {
             sum = currentValue / inputValue
         }
         
-        sumTextField.text = String(sum)
-        currentValue = sum
+        calculatorInput.text = String(sum)
+        currentValue = Double(sum)
         inputValue = 0
     }
     
     @IBAction func InitializeButton(_ sender: Any) {
-        sumTextField.text = ""
-        sum = 0
+        calculatorInput.text = "0"
+        calculatorInput.resignFirstResponder()
         currentValue = 0
         inputValue = 0
-        operatorApplied = false
-    }
-    
-    @IBAction func sumTextFieldChanged(_ sender: Any) {
-        
-        if operatorApplied == false {
-            currentValue = Double(sumTextField.text!)!
-        }
-        
-        if operatorApplied == true {
-            inputValue = Double(sumTextField.text!)!
-        }
+        sum = 0
+        operatorClicked = false
     }
 }

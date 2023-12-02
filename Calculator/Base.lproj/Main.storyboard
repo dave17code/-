@@ -27,7 +27,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="sumTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="bac-xE-m5D"/>
+                                    <action selector="calculatorInputChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="IwW-ND-NP5"/>
+                                    <action selector="calculatorInputDidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="1kY-Us-6sy"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFc-VQ-K6c">
@@ -145,12 +146,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="sumTextField" destination="Dyu-C7-rrh" id="ika-TV-5xj"/>
+                        <outlet property="calculatorInput" destination="Dyu-C7-rrh" id="A3m-cS-l1F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-622.13740458015263" y="-74.647887323943664"/>
+            <point key="canvasLocation" x="-592" y="-562"/>
         </scene>
     </scenes>
     <resources>
