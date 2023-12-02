@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func plusOperatorButton(_ sender: Any) {
+    @IBAction func plusOperateButton(_ sender: Any) {
         
         operatorClicked = true
         
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func minusOperatorButton(_ sender: Any) {
+    @IBAction func minusOperateButton(_ sender: Any) {
         
         operatorClicked = true
         
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func multiplyOperatorButton(_ sender: Any) {
+    @IBAction func multiplyOperateButton(_ sender: Any) {
         
         operatorClicked = true
         
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func divideOperatorButton(_ sender: Any) {
+    @IBAction func divideOperateButton(_ sender: Any) {
         
         operatorClicked = true
         

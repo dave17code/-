@@ -59,7 +59,7 @@
                                     <backgroundConfiguration key="background" image="minusOperator"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="minusOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fEZ-Rv-34y"/>
+                                    <action selector="minusOperateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yCs-v6-eYa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kC-xq-qXv">
@@ -75,7 +75,7 @@
                                     <backgroundConfiguration key="background" image="multiplyOperator"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="multiplyOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QsA-4Y-f7J"/>
+                                    <action selector="multiplyOperateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yJ7-GS-8ar"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QM2-qS-05d">
@@ -91,7 +91,7 @@
                                     <backgroundConfiguration key="background" image="divideOperator"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="divideOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rDb-cK-t8Y"/>
+                                    <action selector="divideOperateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HmA-EM-jsB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUu-qS-ude">
@@ -107,7 +107,7 @@
                                     <backgroundConfiguration key="background" image="plusOperator"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="plusOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mTT-Do-ZV9"/>
+                                    <action selector="plusOperateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Csr-TS-zG9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84k-Mb-d6x">
@@ -151,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-592" y="-562"/>
+            <point key="canvasLocation" x="-940" y="-644"/>
         </scene>
     </scenes>
     <resources>
