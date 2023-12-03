@@ -30,3 +30,31 @@ override func viewDidLoad() {
 }
 ```
 3. resignFirstResponder() 메서드
+```swift
+애플 공식 문서 함수 정의 :
+func resignFirstResponder() -> Bool
+Notifies this object that it has been asked to relinquish its status as first responder in its window.
+// resignFirstResponder() method는 window에서 first responder 상태를 포기하라고 알림
+
+// 내가 사용한 방식 :
+@IBAction func InitializeButton(_ sender: Any) {
+    calculatorInput.text = "0"
+    calculatorInput.resignFirstResponder() // 계산기 초기화 버튼에서 resignFirstResponder() 호출
+    currentValue = 0
+    inputValue = 0
+    sum = 0
+    operatorClicked = false
+}
+
+// 초기화 버튼에서 resignFirstResponder()를 사용한 이유
+
+// 텍스트 필드를 탭하면 텍스트 필드를 first responder로 지정함
+
+// 텍스트필드가 first responder가 되면 UIKit은 텍스트필드의 input View를 화면에 표시
+
+// 따라서 first responder의 자격을 포기해버린다면 input View도 화면에서 사라짐
+
+// 초기화 버튼을 누르면 계산기 입력 창은 0으로 초기화 되고 키보드 입력 커서도 해제
+
+// 다시 계산기 입력 창을 탭하면 텍스트 필드 감지 메서드 Editing Did Begin이 실행되고 빈칸으로 변경
+```
