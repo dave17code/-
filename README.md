@@ -1,6 +1,7 @@
 ## 스파르타 코딩클럽 내일배움캠프 🍎 iOS 트랙
 
 ### 계산기 과제 (➕➖✖️➗)
+<img src="https://github.com/dave17code/TeamSpaCalculator/assets/151927621/557fe1d2-ee89-4736-b57a-eecb92c9610e.jpeg" width="200" height="350"/>
 
 #### 💡 배운점
 1. 스위프트에서 문자열 ("123")을 숫자로 변환 하는 Int(), Double() 메서드는 옵셔널 값을 반환한다.
