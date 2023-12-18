@@ -14,13 +14,18 @@ class ViewController: UIViewController {
     var sum: Double = 0
     var operatorClicked: Bool = false
     var currentClickedOperator: String = ""
-    
+    @IBOutlet weak var calculate: UIButton!
+    @IBOutlet weak var initialize: UIButton!
     @IBOutlet weak var calculatorInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         calculatorInput.text = "0"
+        calculatorInput.borderStyle = .none
+        calculatorInput.layer.cornerRadius = 7.5
+        calculate.layer.cornerRadius = 7.5
+        initialize.layer.cornerRadius = 7.5
     }
     
     @IBAction func calculatorInputDidBegin(_ sender: Any) {
@@ -41,7 +46,7 @@ class ViewController: UIViewController {
     @IBAction func plusOperateButton(_ sender: Any) {
         
         operatorClicked = true
-        
+
         if operatorClicked == true {
             calculatorInput.text = ""
         }
